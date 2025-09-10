@@ -1,6 +1,7 @@
 const express=require('express');//import package
 const app=express();//blueprint i.e. instance
 const db=require('./db')
+require('dotenv').config()
 
 const bodyparser=require('body-parser')//stores in req.body
 app.use(bodyparser.json());
